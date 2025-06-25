@@ -1,22 +1,11 @@
 "use client";
-import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
 
 const NewNavbar = () => {
-  const leftMenu = [
-    {label: 'Home', href: '/'},
-    {label: 'About', href: '/'},
-  ]
+  // const leftMenu = [
+  //   {label: 'Home', href: '/'},
+  //   {label: 'About', href: '/'},
+  // ]
 
   return (
     <nav className="container mx-auto flex justify-between items-center">
