@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const BodyContent = () => {
@@ -8,10 +9,10 @@ const BodyContent = () => {
         {/* Hero Section */}
         <section className="space-y-4">
           <p className="text-[#3DD68C]">Hi, my name is</p>
-          <h1 className="text-7xl font-bold text-[#D6E1FF]">Yusril Hafis</h1>
-          <p className="text-4xl font-bold text-[#D6E1FF]">Software Engineer</p>
+          <h1 className="text-4xl md:text-7xl font-bold text-[#D6E1FF]">Yusril Hafis</h1>
+          <p className="text-3xl md:text-4xl font-bold text-[#D6E1FF]">Software Engineer</p>
           <p className="text-[#D6E1FF]">
-            I am a Software Engineer specializing in building and designing
+            I am a Software Engineer based in Jakarta. specializing in building and designing
             exceptional digital experience.
           </p>
         </section>
