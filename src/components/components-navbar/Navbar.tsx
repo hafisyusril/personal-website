@@ -12,7 +12,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger
+  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
 // const components: { title: string; href: string; description: string }[] = [
@@ -55,10 +55,10 @@ import {
 
 export default function Navbar() {
   return (
-    <div className="container mx-auto flex flex-row md:flex-row justify-between items-center py-4 gap-4">
+    <nav className="container mx-auto flex flex-row md:flex-row justify-between items-center py-4 gap-4">
       <div className="flex px-8">
         <Link href={"/"}>
-          <p className="text-green-500 font-bold text-xl">YusPis.</p>
+          <p className="text-green-500 font-bold text-xl">YusCODE.</p>
         </Link>
       </div>
       <NavigationMenu viewport={false} className="ml-auto">
@@ -129,19 +129,31 @@ export default function Navbar() {
               <ul className="grid w-[130px] gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="https://github.com/hafisyusril" target="_blank" className="flex-row items-center gap-2">
-                      <FaGithub className="text-[#2b3137]"/>
+                    <Link
+                      href="https://github.com/hafisyusril"
+                      target="_blank"
+                      className="flex-row items-center gap-2"
+                    >
+                      <FaGithub className="text-[#2b3137]" />
                       GitHub
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="https://www.linkedin.com/in/yusrilhafis/" target="_blank" className="flex-row items-center gap-2">
-                      <FaLinkedin className="text-[#0077B5]"/>
+                    <Link
+                      href="https://www.linkedin.com/in/yusrilhafis/"
+                      target="_blank"
+                      className="flex-row items-center gap-2"
+                    >
+                      <FaLinkedin className="text-[#0077B5]" />
                       Linkedin
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="https://www.instagram.com/hafisyusril/" target="_blank" className="flex-row items-center gap-2">
+                    <Link
+                      href="https://www.instagram.com/hafisyusril/"
+                      target="_blank"
+                      className="flex-row items-center gap-2"
+                    >
                       <FaInstagram className="text-pink-500" />
                       Instagram
                     </Link>
@@ -152,33 +164,32 @@ export default function Navbar() {
           </NavigationMenuItem>
         </NavigationMenuList>
 
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="flex flex-row bg-transparent hover:bg-transparent text-green-500 md:hidden"><GiHamburgerMenu /></NavigationMenuTrigger>
-          <NavigationMenuContent className="absolute right-0 mt-2 w-56 bg-white shadow-md z-50 rounded-md">
-            <ul className="grid w-[50px] gap-4">
-              <li>
-                <NavigationMenuLink asChild>
-                  <Link href={""}>Projects</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href={""}>Contact Me</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href={""}>Platform</Link>
-                </NavigationMenuLink>
-              </li>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="flex flex-row bg-transparent hover:bg-transparent text-green-500 md:hidden">
+              <GiHamburgerMenu />
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="absolute right-0 top-full  mt-2 w-56 bg-white shadow-md z-50 rounded-md origin-top-right">
+              <ul className="grid w-[50px] gap-4">
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href={""}>Projects</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href={"#Contacts"}>Contact Me</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href={""}>Platform</Link>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
       </NavigationMenu>
 
-      <div>
-
-      </div>
-    </div>
+      <div></div>
+    </nav>
   );
 }
 
