@@ -5,7 +5,7 @@ import SocialMediaBar from "@/components/components-navbar/SocmedBar";
 
 export default function Home() {
   return (
-      <div className="flex flex-col min-h-screen bg-[#182449]">
+      <div className="flex flex-col min-h-screen bg-[#182449] pt-24">
         <Navbar />
         <BodyContent />
         <SocialMediaBar />
