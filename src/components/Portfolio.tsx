@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 px-4 md:px-20 py-10">
       {/* Project 1 */}
-      <div className="card bg-base-100 w-full shadow-md hover:scale-105 transition-transform duration-300">
+      <div className="card bg-[#1d232a] w-full shadow-md hover:scale-105 transition-transform duration-300">
         <figure className="relative w-full h-48">
           <Image src="/byu.png" alt="byU logo" fill className="object-cover" />
         </figure>
@@ -27,7 +27,7 @@ const Portfolio = () => {
       </div>
 
       {/* Project 2 */}
-      <div className="card bg-base-100 w-full shadow-md hover:scale-105 transition-transform duration-300">
+      <div className="card bg-[#1d232a] w-full shadow-md hover:scale-105 transition-transform duration-300">
         <figure className="relative w-full h-48">
           <Image
             src="/blu-logo.png"
@@ -51,7 +51,7 @@ const Portfolio = () => {
       </div>
 
       {/* Project 3 */}
-      <div className="card bg-base-100 w-full shadow-md hover:scale-105 transition-transform duration-300 md:col-span-2 md:mx-auto md:w-1/2">
+      <div className="card bg-[#1d232a] w-full shadow-md hover:scale-105 transition-transform duration-300 md:col-span-2 md:mx-auto md:w-1/2">
         <figure className="relative w-full h-48">
           <Image
             src="/blibli-logo.png"
