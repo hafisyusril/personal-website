@@ -51,7 +51,7 @@ const Portfolio = () => {
       </div>
 
       {/* Project 3 */}
-      <div className="card bg-[#1d232a] w-full shadow-md hover:scale-105 transition-transform duration-300 md:col-span-2 md:mx-auto md:w-1/2">
+      <div className="card bg-[#1d232a] w-full shadow-md hover:scale-105 transition-transform duration-300">
         <figure className="relative w-full h-48">
           <Image
             src="/blibli-logo-1.png"
