@@ -19,7 +19,7 @@ const Byu = () => {
             Company Profile ByU
           </h1>
           <p className="mt-4 text-[#D6E1FF]">
-            byU's interactive and easily accessible company profile website,
+            byU&apos;s interactive and easily accessible company profile website,
             complete with digital service information search features.
           </p>
         </div>

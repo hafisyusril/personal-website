@@ -135,7 +135,7 @@ const Blibli = () => {
                 Company Profile Byu
               </Link>
               <p className="text-[#D6E1FF] text-sm mt-2">
-                byU's interactive and easily accessible company profile website,
+                byU&apos;s interactive and easily accessible company profile website,
                 complete with digital service information search features.
               </p>
             </div>

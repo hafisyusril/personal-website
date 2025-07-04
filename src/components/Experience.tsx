@@ -66,7 +66,7 @@ const Experience = () => {
             </h3>
             <p>
               iMac is a family of all-in-one Mac desktop computers designed and
-              built by Apple Inc. It has been the primary part of Apple's
+              built by Apple Inc. It has been the primary part of Apple&apos;s
               consumer desktop offerings since its debut in August 1998, and has
               evolved through seven distinct forms
             </p>
@@ -135,7 +135,7 @@ const Experience = () => {
             </h3>
             <p>
               iPhone is a line of smartphones produced by Apple Inc. that use
-              Apple's own iOS mobile operating system. The first-generation
+              Apple&apos;s own iOS mobile operating system. The first-generation
               iPhone was announced by then-Apple CEO Steve Jobs on January 9,
               2007. Since then, Apple has annually released new iPhone models
               and iOS updates. As of November 1, 2018, more than 2.2 billion

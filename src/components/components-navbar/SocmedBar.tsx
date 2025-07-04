@@ -43,7 +43,7 @@ const SideBar = () => {
   return (
     <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 hidden md:block">
       <ul className="flex flex-col items-center gap-4 p-4">
-        {socialLinks.map((link, index) => (
+        {socialLinks.map((link) => (
           <li key={link.label} className="group relative w-full">
             <Link
               href={link.href}

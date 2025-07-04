@@ -10,7 +10,7 @@ const ContactForm = () => {
         <Navbar />
         <p className="text-lg md:text-4xl font-bold text-[#D6E1FF] mb-10">
           Looking to partner or work together? Reach out through the contact
-          below and I'll get back to you in the next 48 hours.
+          below and I will get back to you in the next 48 hours.
         </p>
         <div className="space-y-5">
           <a

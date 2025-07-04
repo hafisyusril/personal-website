@@ -13,7 +13,7 @@ const Portfolio = () => {
         <div className="card-body">
           <h2 className="card-title">Company Profile byU</h2>
           <p>
-            byU's interactive and easily accessible company profile website,
+            byU&apos;s interactive and easily accessible company profile website,
             complete with digital service information search features.
           </p>
           <div className="card-actions justify-end">
