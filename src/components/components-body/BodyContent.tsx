@@ -1,7 +1,9 @@
+'use client'
 import Link from "next/link";
 import Footer from "../Footer";
 import { Button } from "../ui/button";
 import Experience from "../Experience";
+import Portfolio from "../Portfolio";
 
 const BodyContent = () => {
   return (
@@ -9,7 +11,7 @@ const BodyContent = () => {
       {/* Hero Section */}
       <section
         id="Hero"
-        className="grid h-screen snap-start pb-20 md:pb-40 md:grid-cols-2 items-start md:items-center gap-6"
+        className="grid h-screen snap-start pb-20 md:pb-40 md:grid-cols-2 items-start md:items-center gap-6 md:px-16"
       >
         <div className="space-y-3">
           <p className="text-[#3DD68C]">
@@ -27,8 +29,12 @@ const BodyContent = () => {
           </p>
           <div className="flex flex-wrap items-center gap-2 md:flex-row  justify-start">
             <Button className="bg-blue-900 text-green-500 cursor-pointer">
-              <Link href={"#Contacts"}>Contact me</Link>
+              <Link href={"/contact-form"}>Contact me</Link>
             </Button>
+              <Button className="bg-blue-900 text-green-500 cursor-pointer">
+              <Link href={"/portfolio"}>My Portfolio</Link>
+            </Button>
+        
           </div>
         </div>
         <div className="flex justify-center md:justify-end">
@@ -44,7 +50,7 @@ const BodyContent = () => {
         {/* About Me Section */}
         <section
           id="AboutMe"
-          className="min-h-screen snap-start pt-24 scroll-mt-24"
+          className="min-h-screen snap-start pt-24 scroll-mt-24 md:px-16"
         >
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             About Me
@@ -64,7 +70,7 @@ const BodyContent = () => {
         {/* Skills Section */}
         <section
           id="Skills"
-          className="min-h-screen snap-start pt-16 scroll-mt-16 px-4"
+          className="min-h-screen snap-start pt-16 scroll-mt-16 md:px-16"
         >
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             Skills
@@ -72,7 +78,7 @@ const BodyContent = () => {
               .
             </span>
           </h2>
-          <ul className="timeline timeline-horizontal">
+          <ul className="timeline timeline-vertical md:timeline-horizontal">
             {/* Web Design (di bawah garis) */}
             <li>
               <div className="timeline-end timeline-box bg-[#0F172A] mt-5">
@@ -144,7 +150,7 @@ const BodyContent = () => {
         {/* Portfolio Section */}
         <section
           id="Portfolio"
-          className="min-h-screen snap-start pt-24 scroll-mt-24 px-6 md:px-16 bg-[#0F172A] text-[#D6E1FF] rounded-4xl"
+          className="min-h-screen snap-start pt-24 scroll-mt-24 md:px-16 text-[#D6E1FF] rounded-4xl"
         >
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             Portfolio
@@ -152,57 +158,15 @@ const BodyContent = () => {
               .
             </span>
           </h2>
+          <Portfolio />
 
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">
-                Company Profile Website for by.U
-              </h3>
-              <p>
-                <strong>Technologies:</strong> JavaScript, TypeScript, Next.js,
-                Node.js, MongoDB
-              </p>
-              <div className="space-y-2">
-                <p>
-                  <strong>Situation:</strong> by.U adalah produk digital dari
-                  Telkomsel yang membutuhkan platform company profile online
-                  untuk menampilkan informasi layanan mereka secara informatif
-                  dan menarik.
-                </p>
-                <p>
-                  <strong>Task:</strong> Saya bertanggung jawab membuat seluruh
-                  tampilan website dari awal dan menyusun fitur-fitur penunjang
-                  yang mempermudah pengguna dalam menjelajahi informasi.
-                </p>
-                <p>
-                  <strong>Action:</strong> Saya menggunakan Next.js dan
-                  TypeScript untuk membangun tampilan antarmuka yang cepat dan
-                  aman, serta menggunakan MongoDB dan Node.js untuk penyimpanan
-                  dan pengelolaan data secara efisien.
-                </p>
-                <p>
-                  <strong>Result:</strong> Website company profile berhasil
-                  diselesaikan dengan tampilan modern, navigasi yang jelas, dan
-                  performa yang ringan — meningkatkan kenyamanan user dalam
-                  mengakses informasi layanan.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex justify-center items-start">
-              <img
-                src="/byu-logo.png"
-                alt="Screenshot project by.U"
-                className="rounded-lg shadow-lg w-full max-w-md object-cover"
-              />
-            </div>
-          </div>
+      
         </section>
 
         {/* Experience Section */}
         <section
           id="Experience"
-          className="min-h-screen snap-start pt-16 scroll-mt-16"
+          className="min-h-screen snap-start pt-16 scroll-mt-16 md:px-16"
         >
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             Experience
@@ -210,15 +174,14 @@ const BodyContent = () => {
               .
             </span>
           </h2>
-          
-        <Experience />
-        </section>
 
+          <Experience />
+        </section>
 
         {/* Testimonial Section */}
         <section
           id="Testimonial"
-          className="min-h-screen snap-start pt-16 scroll-mt-16"
+          className="min-h-screen snap-start pt-16 scroll-mt-16 md:px-16"
         >
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             Testimonials

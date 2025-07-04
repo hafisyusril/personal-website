@@ -13,9 +13,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoDocumentTextOutline, IoHomeOutline } from "react-icons/io5";
 import { MdWorkOutline } from "react-icons/md";
 import { BiLike } from "react-icons/bi";
 
@@ -31,33 +32,9 @@ export default function Navbar() {
         <NavigationMenu viewport={false} className="ml-auto">
           <NavigationMenuList>
             <NavigationMenuItem className="hidden md:inline-block">
-              <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-green-500">
-                Projects
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[300px] gap-4">
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">
-                        <div className="font-medium">
-                          Register and Login page
-                        </div>
-                        <div className="text-muted-foreground">
-                          Build Register and Login page properly
-                        </div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">
-                        <div className="font-medium">Company Profile</div>
-                        <div className="text-muted-foreground">
-                          Build responsive and interactive design for company
-                        </div>
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
+              <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} bg-transparent text-green-500`} >
+              <Link href={"/portfolio"}>Portfolio</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem className="hidden md:inline-block">
               <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-green-500">
@@ -122,8 +99,6 @@ export default function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
-
-         
         </NavigationMenu>
         <div className="drawe md:hidden">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -145,24 +120,44 @@ export default function Navbar() {
             <ul className="menu bg-base-200 text-base-content min-h-full w-60 px-4 py-20 gap-5">
               {/* Sidebar content here */}
               <li>
-                <a href="#AboutMe"><FaRegUser className="h-6 w-6 text-green-500" />About Me</a>
+                <Link href={"/"}>
+                <IoHomeOutline className="h-6 w-6 text-green-500" />
+                Home
+                </Link>
               </li>
               <li>
-                <a href="#Skills"><HiOutlineWrenchScrewdriver className="h-6 w-6 text-green-500" />Skills</a>
+                <Link href="/#AboutMe">
+                  <FaRegUser className="h-6 w-6 text-green-500" />
+                  About Me
+                </Link>
               </li>
               <li>
-                <a href="#Portfolio"><IoDocumentTextOutline className="h-6 w-6 text-green-500" />Portfolio</a>
+                <Link href="/#Skills">
+                  <HiOutlineWrenchScrewdriver className="h-6 w-6 text-green-500" />
+                  Skills
+                </Link>
               </li>
               <li>
-<a href="#Experience"><MdWorkOutline className="h-6 w-6 text-green-500" />Work Experience</a>
+                <Link href="/#Portfolio">
+                  <IoDocumentTextOutline className="h-6 w-6 text-green-500" />
+                  Portfolio
+                </Link>
               </li>
               <li>
-<a href="#Testimonial"><BiLike className="h-6 w-6 text-green-500" />Testimonials</a>
+                <Link href="/#Experience">
+                  <MdWorkOutline className="h-6 w-6 text-green-500" />
+                  Work Experience
+                </Link>
+              </li>
+              <li>
+                <Link href="/#Testimonial">
+                  <BiLike className="h-6 w-6 text-green-500" />
+                  Testimonials
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-
       </div>
     </nav>
   );

@@ -3,15 +3,20 @@ import Link from "next/link";
 import { BiLike } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
 import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoDocumentTextOutline, IoHomeOutline } from "react-icons/io5";
 import { MdWorkOutline } from "react-icons/md";
 
-const SocialMediaBar = () => {
+const SideBar = () => {
   const socialLinks = [
+    {
+      href: "/",
+      icon: <IoHomeOutline className="h-6 w-6 text-green-500" />,
+      label: "Home"
+    },
     {
       href: "#AboutMe",
       icon: <FaRegUser className="h-6 w-6 text-green-500" />,
-      label: "About Me",
+      label: "AboutMe",
     },
     {
       href: "#Skills",
@@ -61,5 +66,5 @@ const SocialMediaBar = () => {
   );
 };
 
-export default SocialMediaBar;
+export default SideBar;
 

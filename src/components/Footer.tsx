@@ -10,7 +10,7 @@ import {
 
  const Footer = () => {
   return (
-    <div>
+    <div className="container mx-auto px-4">
       <footer
         id="Contacts"
         className="w-full py-6 bg-gray-900 flex flex-col items-center gap-4 md:flex-row md:justify-between md:px-10 rounded-t-2xl"
@@ -19,52 +19,56 @@ import {
           <li className="flex gap-10">
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link
+                <a
                   href="https://wa.me/6285156900361"
                   target="_blank"
                   className="items-center"
+                  rel="noopener noreferrer"
                 >
                   <FaWhatsapp className="text-green-500 size-8 hover:scale-150 transition-transform" />
-                </Link>
+                </a>
               </TooltipTrigger>
               <TooltipContent side="top">Text to WhatsApp</TooltipContent>
             </Tooltip>
 
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link
+                <a
                   href="mailto:yusrilhafis@gmail.com"
                   target="_blank"
-                  className="items-center gap-2"
+                  className="items-center"
+                  rel="noopener noreferrer"
                 >
                   <SiGmail className="text-green-500 size-8 hover:scale-150 transition-transform" />
-                </Link>
+                </a>
               </TooltipTrigger>
               <TooltipContent side="top">Text to Gmail</TooltipContent>
             </Tooltip>
 
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link
+                <a
                   href="https://github.com/hafisyusril"
                   target="_blank"
-                  className="items-center gap-2"
+                  className="items-center"
+                  rel="noopener noreferrer"
                 >
                   <FaGithub className="text-green-500 size-8 hover:scale-150 transition-transform" />
-                </Link>
+                </a>
               </TooltipTrigger>
               <TooltipContent side="top">GitHub Profile</TooltipContent>
             </Tooltip>
 
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link
+                <a
                   href="https://www.linkedin.com/in/yusrilhafis/"
                   target="_blank"
-                  className="items-center gap-2"
+                  className="items-center"
+                  rel="noopener noreferrer"
                 >
                   <FaLinkedin className="text-green-500 size-8 hover:scale-150 transition-transform" />
-                </Link>
+                </a>
               </TooltipTrigger>
               <TooltipContent side="top">Linkedin Profile</TooltipContent>
             </Tooltip>
