@@ -60,32 +60,31 @@ const Blibli = () => {
                 Situation
               </h2>
               <p>
-                byU, a digital product by Telkomsel, needed a website revamp to
-                enhance user engagement and better showcase their offerings.
+                Blibli required an e-commerce platform refresh to enhance
+                product discovery and streamline the shopping experience.
               </p>
             </div>
             <div>
               <h2 className="text-2xl font-bold text-green-500 mb-2">Task</h2>
               <p>
-                My main task was to rebuild the frontend and backend structure
-                of the website, focusing on scalability, speed, and
-                responsiveness.
+                My role was to develop a fast and scalable web interface,
+                ensuring seamless product browsing and mobile responsiveness.
               </p>
             </div>
             <div>
               <h2 className="text-2xl font-bold text-green-500 mb-2">Action</h2>
               <p>
-                I used Next.js with TypeScript for the frontend, integrated the
-                backend using Node.js and MongoDB, and deployed it using Vercel
-                for performance optimization.
+                I built the frontend with React.js and implemented optimized
+                product listings, filters, and image loading. Performance tuning
+                and SEO optimization were also prioritized.
               </p>
             </div>
             <div>
               <h2 className="text-2xl font-bold text-green-500 mb-2">Result</h2>
               <p>
-                The redesign resulted in a significant improvement in site speed
-                and user engagement. Visitors found it easier to navigate and
-                access key information.
+                The redesigned platform achieved better Core Web Vitals scores,
+                improved search visibility, and reduced bounce rates on product
+                pages.
               </p>
             </div>
           </div>
@@ -135,8 +134,9 @@ const Blibli = () => {
                 Company Profile Byu
               </Link>
               <p className="text-[#D6E1FF] text-sm mt-2">
-                byU&apos;s interactive and easily accessible company profile website,
-                complete with digital service information search features.
+                byU&apos;s interactive and easily accessible company profile
+                website, complete with digital service information search
+                features.
               </p>
             </div>
           </div>

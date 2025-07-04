@@ -129,7 +129,7 @@ const Byu = () => {
             </div>
             <div className="p-4 bg-[#1E293B] rounded-lg shadow">
               <Link
-                href="/portfolio/project-3"
+                href="/portfolio/blibli"
                 className="text-green-400 text-lg font-semibold hover:underline"
               >
                 Blibli E-Commerce

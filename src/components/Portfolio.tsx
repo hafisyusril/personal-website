@@ -54,7 +54,7 @@ const Portfolio = () => {
       <div className="card bg-[#1d232a] w-full shadow-md hover:scale-105 transition-transform duration-300 md:col-span-2 md:mx-auto md:w-1/2">
         <figure className="relative w-full h-48">
           <Image
-            src="/blibli-logo.png"
+            src="/blibli-logo-1.png"
             alt="Blibli logo"
             fill
             className="object-cover"
