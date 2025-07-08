@@ -57,7 +57,6 @@ const SideBar = () => {
             <span className="absolute left-full ml-2 px-2 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               {link.label}
             </span>
-            {/* Tambahkan <hr> kecuali untuk item terakhir */}
               <hr className="border-green-500 my-2 w-8" />
           </li>
         ))}

@@ -24,17 +24,15 @@ const Blu = () => {
           </p>
         </div>
 
-        {/* Fullwidth Image */}
         <div className="relative w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden">
           <Image
-            src="/blu-logo.png" // ganti dengan path yang sesuai
+            src="/blu-logo.png" 
             alt="byU Preview"
             fill
             className="object-cover"
           />
         </div>
 
-        {/* Sticky Info + STAR Method */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Sticky Left Column */}
           <div className="md:col-span-1 h-fit md:sticky top-20 border-2 border-green-500 rounded-lg p-2">

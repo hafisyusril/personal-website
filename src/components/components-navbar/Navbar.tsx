@@ -118,7 +118,6 @@ export default function Navbar() {
               className="drawer-overlay"
             ></label>
             <ul className="menu bg-base-200 text-base-content min-h-full w-60 px-4 py-20 gap-5">
-              {/* Sidebar content here */}
               <li>
                 <Link href={"/"}>
                 <IoHomeOutline className="h-6 w-6 text-green-500" />

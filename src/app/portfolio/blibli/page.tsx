@@ -34,9 +34,8 @@ const Blibli = () => {
           />
         </div>
 
-        {/* Sticky Info + STAR Method */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Sticky Left Column */}
+          {/* Left Column */}
           <div className="md:col-span-1 h-fit md:sticky top-20 border-2 border-green-500 rounded-lg p-2">
             <div className="space-y-2 text-[#D6E1FF]">
               <p>
@@ -53,7 +52,7 @@ const Blibli = () => {
             </div>
           </div>
 
-          {/* STAR Right Column */}
+          {/* Right Column */}
           <div className="md:col-span-2 space-y-10 text-[#D6E1FF]">
             <div>
               <h2 className="text-2xl font-bold text-green-500 mb-2">
