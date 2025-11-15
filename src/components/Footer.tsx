@@ -11,7 +11,7 @@ import { SiGmail } from "react-icons/si";
     <div className="container mx-auto px-4">
       <footer
         id="Contacts"
-        className="w-full py-6 bg-gray-900 flex flex-col items-center gap-4 md:flex-row md:justify-between md:px-10 rounded-t-2xl"
+        className="w-full py-10  flex flex-col items-center gap-4 md:flex-row md:justify-between md:px-10 rounded-t-2xl"
       >
         <ul>
           <li className="flex gap-10">

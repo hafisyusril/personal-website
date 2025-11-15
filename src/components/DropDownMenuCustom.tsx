@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   NavigationMenuItem,
@@ -20,7 +20,10 @@ type DropdownMenuProps = {
   items: DropdownItem[];
 };
 
-export default function DropdownMenuCustom({ label, items }: DropdownMenuProps) {
+export default function DropdownMenuCustom({
+  label,
+  items,
+}: DropdownMenuProps) {
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger>{label}</NavigationMenuTrigger>

@@ -2,24 +2,6 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Animesh Narang",
-    role: "Chief Executive Officer",
-    quote:
-      "Yusril is very reliable and delivers great results. His web development skills are top-notch.",
-  },
-  {
-    name: "Manu Pal",
-    role: "Chief of Product",
-    quote:
-      "Working with Yusril was a smooth and inspiring experience. He understands design implementation really well.",
-  },
-  {
-    name: "Melina Ho",
-    role: "Senior Project Manager",
-    quote:
-      "Very professional and detail-oriented. Highly recommend Yusril for fullstack development projects.",
-  },
-  {
     name: "Lauren Hailey",
     role: "Senior Creative Designer",
     quote: "Amazing story appears while we work together. Wonderful skills are owned by him"
