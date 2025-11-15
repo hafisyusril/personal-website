@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import Experience from "./Experience";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Portfolio from "./HomePortfolio";
+import HomePortfolio from "./HomePortfolio";
 import Skills from "./Skills";
 import Testimonials from "./Testimonials";
-import HomePortfolio from "./HomePortfolio";
 
 const BodyContent = () => {
   return (
