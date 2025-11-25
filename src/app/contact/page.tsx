@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#182449] py-50">
+    <div className="flex flex-col min-h-screen  py-50">
       <motion.div
         className="snap-y snap-mandatory scroll-smooth bg-[#182449]"
         initial={{ opacity: 0, y: 0 }}

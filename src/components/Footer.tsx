@@ -6,9 +6,9 @@ import {
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
- const Footer = () => {
+const Footer = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 bg-[#182449]">
       <footer
         id="Contacts"
         className="w-full py-10  flex flex-col items-center gap-4 md:flex-row md:justify-between md:px-10 rounded-t-2xl"
@@ -80,6 +80,4 @@ import { SiGmail } from "react-icons/si";
   );
 };
 
-export default Footer
-
-
+export default Footer;

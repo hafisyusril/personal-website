@@ -119,3 +119,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+#nprogress .bar {
+  background: #008236 !important;
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 6px #00c951, 0 0 2px #00c951 !important;
+}
+
+#nprogress .spinner {
+  display: none !important;
+}

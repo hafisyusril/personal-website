@@ -55,11 +55,11 @@ export default function ExperienceSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={selectedId}
-            initial={{ opacity: 0, y: 20, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -10, scale: 0.98 }}
+            initial={{ opacity: 0, x: -40, scale: 0.98 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: 40, scale: 0.98 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="bg-[#1B2B5B] rounded-xl p-6 shadow-lg"
+            className=""
           >
             <h2 className="text-2xl font-medium mb-2 text-[#D6E1FF]">
               {experiences[selectedId].position}{" "}
