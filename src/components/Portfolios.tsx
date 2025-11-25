@@ -12,7 +12,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import Footer from "./Footer";
 
 export default function Portfolios() {
   const ref = useRef<HTMLUListElement>(null);

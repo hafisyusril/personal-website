@@ -1,6 +1,5 @@
 "use client";
 import Aboutme from "@/components/Aboutme";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
 const ContactForm = () => {
