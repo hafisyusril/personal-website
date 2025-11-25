@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Experience from "./Experience";
-import Footer from "./Footer";
 import Hero from "./Hero";
 import HomePortfolio from "./HomePortfolio";
 import Skills from "./Skills";
@@ -20,13 +19,11 @@ const BodyContent = () => {
       }}
     >
       {/* Hero Section */}
-      <section id="Hero" className="snap-start md:px-2 pt-2 md:py-12">
+      <section id="Hero" className=" snap-start md:px-2 pt-2 md:py-12">
         <Hero />
       </section>
 
       <main className="space-y-8">
-        {/* About Me Section */}
-
         {/* Portfolio Section */}
         <section
           id="Portfolio"
@@ -42,10 +39,7 @@ const BodyContent = () => {
         </section>
 
         {/* Experience Section */}
-        <section
-          id="Experience"
-          className=" snap-start pt-16 scroll-mt-16"
-        >
+        <section id="Experience" className=" snap-start pt-16 scroll-mt-16">
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             Experience
             <span className="text-4xl font-semibold text-[#D6E1FF] mb-2">
@@ -69,10 +63,7 @@ const BodyContent = () => {
         </section>
 
         {/* Testimonial Section */}
-        <section
-          id="Testimonial"
-          className="snap-start py-16 scroll-mt-16"
-        >
+        <section id="Testimonial" className="snap-start py-16 scroll-mt-16">
           <h2 className="text-4xl font-semibold text-green-500 mb-10">
             Testimonials
             <span className="text-4xl font-semibold text-[#D6E1FF] mb-2">
@@ -83,9 +74,6 @@ const BodyContent = () => {
           <Testimonials />
         </section>
       </main>
-
-      {/* Footer */}
-      <Footer />
     </motion.div>
   );
 };

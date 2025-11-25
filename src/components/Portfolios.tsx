@@ -12,7 +12,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import Footer from "./Footer";
 
 export default function Portfolios() {
   const ref = useRef<HTMLUListElement>(null);
@@ -21,7 +20,7 @@ export default function Portfolios() {
 
   return (
     <motion.div
-      className="bg-[#182449] min-h-screen flex flex-col justify-between pt-30"
+      className="pt-40 pb-35"
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -35,7 +34,7 @@ export default function Portfolios() {
         <motion.ul
           ref={ref}
           style={{ maskImage }}
-          className="flex overflow-x-scroll no-scrollbar gap-8 p-8 w-full max-w-6xl"
+          className="flex overflow-x-scroll no-scrollbar gap-8  w-full max-w-6xl"
         >
           {projects.map((project) => (
             <li
@@ -72,7 +71,6 @@ export default function Portfolios() {
           ))}
         </motion.ul>
       </div>
-      <Footer />
     </motion.div>
   );
 }

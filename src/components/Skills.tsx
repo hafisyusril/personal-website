@@ -1,62 +1,100 @@
-import { FaCss3Alt, FaReact, FaServer } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
+"use client";
 
-const Skills = () => {
+import { motion } from "framer-motion";
+import { BiLogoVisualStudio } from "react-icons/bi";
+import {
+  SiExpress,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPostman,
+  SiPrisma,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+
+
+const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "HTML", icon: <SiHtml5 /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "React.js", icon: <SiReact /> },
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+    ],
+  },
+  {
+    title: "Backend & Database",
+    skills: [
+      { name: "Node.js", icon: <SiNodedotjs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "Prisma ORM", icon: <SiPrisma /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "MySQL", icon: <SiMysql /> },
+    ],
+  },
+  {
+    title: "Tools",
+    skills: [
+      { name: "Visual Studio Code", icon: <BiLogoVisualStudio /> },
+      { name: "Git", icon: <SiGit /> },
+      { name: "GitHub", icon: <SiGithub /> },
+      { name: "Postman", icon: <SiPostman /> },
+    ],
+  },
+];
+
+export default function Skills() {
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-6 flex-wrap">
-      {/* Web Design */}
-      <div className="bg-[#0F172A] p-6 rounded-lg w-full md:w-1/4">
-        <p className="text-green-500 font-semibold text-center mb-2">
-          Web Design
-        </p>
-        <ul className="text-[#D6E1FF] text-xl list-none space-y-1">
-          <li>UI/UX Design</li>
-          <li>Responsive Design</li>
-          <li>Wireframing</li>
-          <li>User Research</li>
-        </ul>
-      </div>
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{
+        hidden: { opacity: 0 },
+        show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+      }}
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    >
+      {skillCategories.map((category, index) => (
+        <motion.div
+          key={index}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            show: { opacity: 1, y: 0 },
+          }}
+          className="bg-[#1B2B5B] border border-green-500 rounded-2xl p-6 shadow-lg"
+        >
+          <h3 className="text-2xl font-semibold text-green-400 mb-4">
+            {category.title}
+            <span className="text-[#D6E1FF]">.</span>
+          </h3>
 
-      {/* Frontend */}
-      <div className="bg-[#0F172A] p-6 rounded-lg w-full md:w-1/4">
-        <p className="text-green-500 font-semibold text-center mb-2">
-          Frontend
-        </p>
-        <ul className="text-[#D6E1FF] text-xl list-none space-y-1">
-          <li className="flex items-center gap-2"><IoLogoJavascript className="text-[#efd81a]" /> JavaScript</li>
-          <li className="flex items-center gap-2"><FaReact className="text-[#60dbfb]"/> ReactJS</li>
-          <li className="flex items-center gap-2"><RiNextjsFill /> NextJS</li>
-          <li className="flex items-center gap-2"><FaCss3Alt className="text-[#147bbf]"/> CSS</li>
-        </ul>
-      </div>
-
-      {/* Backend */}
-      <div className="bg-[#0F172A] p-6 rounded-lg w-full md:w-1/4">
-        <p className="text-green-500 font-semibold text-center mb-2">Backend</p>
-        <ul className="text-[#D6E1FF] text-xl list-none space-y-1">
-          <li className="flex items-center gap-2"><SiPostgresql className="text-[#30638b]" />PostgreSQL</li>
-          <li className="flex items-center gap-2"><SiMongodb className="text-[#4ca53f]"/>MongoDB</li>
-          <li className="flex items-center gap-2"><SiExpress className="text-[]" />ExpressJS</li>
-          <li className="flex items-center gap-2"><FaServer className="text-[#628bdd]"/>RESTful API</li>
-        </ul>
-      </div>
-
-      {/* Soft Skills */}
-      <div className="bg-[#0F172A] p-6 rounded-lg w-full md:w-1/4">
-        <p className="text-green-500 font-semibold text-center mb-2">
-          Soft Skills
-        </p>
-        <ul className="text-[#D6E1FF] text-xl list-none space-y-1">
-          <li>Effective Communication</li>
-          <li>Collaboration</li>
-          <li>Commitment</li>
-          <li>Leadership</li>
-        </ul>
-      </div>
-    </div>
+          <ul className="space-y-3">
+            {category.skills.map((skill, i) => {
+              return (
+                <motion.li
+                  key={i}
+                  whileHover={{ scale: 1.05, x: 4 }}
+                  className="flex items-center gap-3 text-[#D6E1FF]/90 text-lg"
+                >
+                  <span className="text-green-400 text-2xl">
+                    {skill.icon}
+                  </span>
+                  {skill.name}
+                </motion.li>
+              );
+            })}
+          </ul>
+        </motion.div>
+      ))}
+    </motion.div>
   );
-};
-
-export default Skills;
+}
